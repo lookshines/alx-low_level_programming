@@ -4,9 +4,10 @@
 /**
 * main - print last digit of variable
 *
-* Description: Print the statement based on the last digit of a random number held in a variable
+* Description: Print the statement based on the last digit 
+* of a random number held in a variable
 *
-* Return 0
+* return: 0
 */
 int main(void)
 {
@@ -30,6 +31,6 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
-	
+
 	return (0);
 }
