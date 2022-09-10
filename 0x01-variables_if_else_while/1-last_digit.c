@@ -4,10 +4,10 @@
 /**
 * main - print last digit of variable
 *
-* Description: Print the statement based on the last digit 
+* Description: Print the statement based on the last digit
 * of a random number held in a variable
 *
-* return: 0
+* Return: Always 0 (Success)
 */
 int main(void)
 {
