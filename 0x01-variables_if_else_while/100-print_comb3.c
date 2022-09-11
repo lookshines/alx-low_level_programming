@@ -15,11 +15,11 @@ int main(void)
 	int l;
 
 	i = 48;
-	l = 49;
-	
+	l = i + 1;
+
 	while (i <= 57)
 	{
-		l = 49;
+		l = i + 1;
 		while (l <= 57)
 		{
 			putchar(i);
