@@ -25,7 +25,7 @@ int main(void)
 		z = l + 1;
 		while (l <= 57)
 		{
-			z = l +1;
+			z = l + 1;
 			while (z <= 57)
 			{
 				putchar(i);
@@ -37,7 +37,7 @@ int main(void)
 					putchar(32);
 				}
 				z++;
-			}	
+			}
 			l++;
 		}
 		i++;
