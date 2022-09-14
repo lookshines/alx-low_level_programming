@@ -9,9 +9,10 @@
  *
  **/
 
-int main (void)
+int main(void)
 {
 	char l, m, n, o, p, q, r, s, z;
+	
 	l = 95;
 	m = 112;
 	n = 117;
@@ -21,7 +22,7 @@ int main (void)
 	r = 97;
 	s = 114;
 	z = 10;
-	
+
 	_putchar (l);
 	_putchar (m);
 	_putchar (n);
@@ -31,6 +32,6 @@ int main (void)
 	_putchar (r);
 	_putchar (s);
 	_putchar (z);
-	
+
 	return (0);
 }
