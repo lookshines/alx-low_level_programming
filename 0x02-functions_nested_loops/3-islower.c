@@ -5,9 +5,10 @@
 *
 * i is the character being checked
 *
-* Return 1 if it is lowercase  and 0 otherwise
+* Return 1 if it is lowercase
+* Return 0 if it is not lowercase
+*
 */
-
 int _islower(int i)
 {
 	if (i >= 97 && i <= 122)
