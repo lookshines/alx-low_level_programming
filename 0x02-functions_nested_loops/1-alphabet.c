@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* main - function that prints all alphabet in lower case
-*
-* description - function print_alphabet
+* print_alphabet - print alphabet in lower case uisng _putchar
+* on a new line
 *
 * Return void
 */
