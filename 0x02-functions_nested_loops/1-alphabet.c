@@ -5,7 +5,7 @@
 * Description: prints all alphabet in lower case
 * on the new line using _putchar function
 *
-* Return: Always 0 (Success)
+* Return void
 */
 
 void print_alphabet(void)
