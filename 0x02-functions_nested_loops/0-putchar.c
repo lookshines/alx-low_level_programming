@@ -5,7 +5,7 @@
  *
  * Description: a program that print _putchar on new line
  *
- * Return 0 (success)
+ * Return: 0 (success)
  *
  **/
 
@@ -23,15 +23,15 @@ int main(void)
 	s = 114;
 	z = 10;
 
-	_putchar (l);
-	_putchar (m);
-	_putchar (n);
-	_putchar (o);
-	_putchar (p);
-	_putchar (q);
-	_putchar (r);
-	_putchar (s);
-	_putchar (z);
+	_putchar(l);
+	_putchar(m);
+	_putchar(n);
+	_putchar(o);
+	_putchar(p);
+	_putchar(q);
+	_putchar(r);
+	_putchar(s);
+	_putchar(z);
 
 	return (0);
 }
