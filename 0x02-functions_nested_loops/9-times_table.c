@@ -25,9 +25,17 @@ void times_table(void)
 			}
 			if (i < 9)
 			{
-				_putchar(44);
-				_putchar(32);
-				_putchar(32);
+				if (result < 10)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				else
+				{
+					_putchar(44);
+					_putchar(32);
+				}
 			}
 			i++;
 		}
