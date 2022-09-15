@@ -18,10 +18,10 @@ void jack_bauer(void)
 			hour_unit_max = 58;
 		else
 			hour_unit_max = 52;
-			
+
 		for (hour_unit = 48; hour_unit < hour_unit_max; hour_unit++)
 		{
-			
+
 			for (min_tens = 48; min_tens < 54; min_tens++)
 			{
 				min_unit = 48;
