@@ -2,11 +2,9 @@
 
 /**
 * print_times_table - print the times table of an integer
-*
 * @n: the integer multiplation table
 *
 * Return: void
-*
 */
 void print_times_table(int n)
 {
@@ -22,30 +20,26 @@ void print_times_table(int n)
 				result = mul * i;
 				if (result == 0 && i == 0)
 					_putchar('0' + result);
-				else if (result < 10)
+				if (result > 0)
 				{
 					_putchar(44);
 					_putchar(32);
-					_putchar(32);
-					_putchar(32);
-					_putchar('0' + result);
 				}
-				else if (result >= 10 && result < 100)
+				if (result < 10)
+					_putchar(32);
+				if (result < 100)
+					_putchar(32);
+
+				if (result >= 100)
 				{
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-					_putchar((result / 10) + '0');
-					_putchar((result % 10) + '0');
-				}
-				else
-				{
-					_putchar(44);
-					_putchar(32);
-					_putchar(((result / 10) / 10) + '0');
+					_putchar((result / 100) + '0');
 					_putchar(((result / 10) % 10) + '0');
-					_putchar((result % 10) + '0');
 				}
+				else if (result < 100 && result >= 10)
+				{
+					_putchar((result / 10) + '0');
+				}
+				_putchar((result % 10) + '0');
 				i++;
 			}
 			_putchar(10);
