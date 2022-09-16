@@ -16,24 +16,21 @@ void times_table(void)
 		while (i < 10)
 		{
 			result = mul * i;
-			if (i < 9)
+			if (result == 0 && i == 0)
+				_putchar('0' + result);
+			else if (result < 10)
 			{
-				if (result == 0 && i == 0)
-					_putchar('0' + result);
-				else if (result < 10)
-				{
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-					_putchar('0' + result);
-				}
-				else
-				{
-					_putchar(44);
-					_putchar(32);
-					_putchar((result / 10) + '0');
-					_putchar((result % 10) + '0');
-				}
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
+				_putchar('0' + result);
+			}
+			else
+			{
+				_putchar(44);
+				_putchar(32);
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
 			}
 			i++;
 		}
