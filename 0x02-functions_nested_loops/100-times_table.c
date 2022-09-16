@@ -14,17 +14,15 @@ void print_times_table(int n)
 	{
 		for (mul = 0; mul <= n; mul++)
 		{
-			i = 0;
+			_putchar(48);
+			i = 1;
 			while (i <= n)
 			{
+				_putchar(44);
+				_putchar(32);
+
 				result = mul * i;
-				if (result == 0 && i == 0)
-					_putchar('0' + result);
-				if (result > 0)
-				{
-					_putchar(44);
-					_putchar(32);
-				}
+
 				if (result < 10)
 					_putchar(32);
 				if (result < 100)
