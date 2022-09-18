@@ -8,7 +8,8 @@
 */
 int main(void)
 {
-	int i, fi1, fi2, sum;
+	int i;
+	long fi1, fi2, sum;
 
 	i = 0;
 	fi1 = 0;
@@ -18,7 +19,7 @@ int main(void)
 	{
 		sum = fi1 + fi2;
 
-		printf("%d", sum);
+		printf("%lu", sum);
 
 		if (i < 49)
 			printf(", ");
