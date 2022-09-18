@@ -20,7 +20,7 @@ int main(void)
 	{
 		curfi = fi1 + fi2;
 
-		if ((curfi % 2) == 0 || curfi <= 4000000)
+		if ((curfi % 2) == 0 && curfi <= 4000000)
 			sum = sum + curfi;
 
 		fi1 = fi2;
