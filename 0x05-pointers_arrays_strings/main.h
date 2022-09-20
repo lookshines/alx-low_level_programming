@@ -1,4 +1,4 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef main.h 
+#define main.h
 void reset_to_98(int *n);
 #endif
