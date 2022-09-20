@@ -2,15 +2,20 @@
 
 /**
  * _strlen - returns the length of a string
- * @s : string
  *
- * Return: void
+ * @s : variable to check length
+ *
+ * Return: len
  */
-int _strlen(const char *s)
+int _strlen(char *s)
 {
-	size_t len = 0;
+	int len;
 
-	while (*str++)
-	len++;
+	len = 0;
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
 	return (len);
 }
