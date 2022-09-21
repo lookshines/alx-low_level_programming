@@ -23,7 +23,7 @@ void puts_half(char *s)
 	else
 		l = (i - 1) / 2;
 
-	while (l <= i)
+	while (l < i)
 	{
 		_putchar(s[l]);
 		l++;
