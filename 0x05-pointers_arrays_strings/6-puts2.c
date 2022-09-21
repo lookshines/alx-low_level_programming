@@ -6,7 +6,7 @@
  *
  * @s : string to reverse
  *
- * Return: void 
+ * Return: void
  */
 void puts2(char *s)
 {
