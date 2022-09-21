@@ -8,17 +8,16 @@
  */
 int main(void)
 {
-	long i, prime;
+	long i, l, prime;
 
 	prime = 612852475143;
-	i = 1;
-	while (i <= prime / 2)
-		if (prime % i == 0)
-			prime = prime / i;
-		else
-			i += 2;
-
-	printf("%ld\n", prime);
+	i = 11;
+	l = i;
+	while (i <= prime)
+		if (!(i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i % 7 == 0))
+			if (!(i % 11 == 0 || i % 13 == 0 || i % 17 == 0 || i % 19 == 0))
+				l = i;
+	printf("%ld\n", l);
 
 	return (0);
 }
