@@ -17,6 +17,7 @@ void puts_half(char *s)
 		i++;
 	}
 
+	i++;
 	if (i % 2 == 0)
 		l = i / 2;
 	else
