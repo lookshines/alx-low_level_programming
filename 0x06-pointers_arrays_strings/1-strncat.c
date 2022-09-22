@@ -7,7 +7,7 @@
  * @src: 2nd string
  * @n: number of characters
  *
- * Return: char
+ * Return: dest
  *
  */
 char *_strncat(char *dest, char *src, int n)
