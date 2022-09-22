@@ -15,8 +15,6 @@ char *leet(char *s)
 	{
 		if (s[i] == 'a' || s[i] == 'A')
 			s[i] = '4';
-
-
 		while (s[i] == 'e' || s[i] == 'E')
 			s[i] = '3';
 		while (s[i] == 'o' || s[i] == 'O')
