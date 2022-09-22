@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strincat - concatenates two strings based on n characters
+ * *_strncat - concatenates two strings based on n characters
  *
  * @dest: 1st string
  * @src: 2nd string
@@ -12,21 +12,14 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, l;
+	int i, c;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-	l = 0;
-	while (src[l] != '\0' && n > 0)
+	for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
 	{
-		dest[i] = src[l];
-		i++;
-		l++;
-		n--;
+		dest[i] = src[c];
 	}
 	return (dest);
 }
