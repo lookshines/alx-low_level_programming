@@ -41,6 +41,7 @@ void print_number(int n)
 			_putchar((num / (mul / 10)) + '0');
 			mul /= 10;
 
+
 			while (mul > 10)
 			{
 				_putchar((num / (mul  / 10)) % 10 + '0');
