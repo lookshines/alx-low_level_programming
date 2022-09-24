@@ -27,6 +27,7 @@ void print_number(int n)
 		mul *= 10;
 	}
 
+	
 	i = 1;
 	while (i > 0)
 	{
@@ -39,6 +40,7 @@ void print_number(int n)
 		{
 			_putchar((num / (mul / 10)) + '0');
 			mul /= 10;
+			
 			while (mul > 10)
 			{
 				_putchar((num / (mul  / 10)) % 10 + '0');
