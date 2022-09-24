@@ -10,43 +10,16 @@
  */
 void print_number(int n)
 {
-	int mul, num, i;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		num = -1 * n;
+		_putchar(45);
+		i = -i;
 	}
-	else
-		num = n;
-
-
-	mul = 10;
-	while ((num / mul) > 0)
-		mul *= 10;
-
-
-	i = 1;
-	while (i > 0)
+	if (i / 10)
 	{
-		if (mul == 10)
-		{
-			_putchar(num % mul + '0');
-			i = -1;
-		}
-		else
-		{
-			_putchar((num / (mul / 10)) + '0');
-			mul /= 10;
-
-
-			while (mul > 10)
-			{
-				_putchar((num / (mul  / 10)) % 10 + '0');
-				mul /= 10;
-			}
-			
-			i = 1;
-		}
+		print_number(i / 10);
 	}
+	_putchar(i % 10 + '0');
 }
