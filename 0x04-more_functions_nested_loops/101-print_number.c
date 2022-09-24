@@ -23,9 +23,7 @@ void print_number(int n)
 
 	mul = 10;
 	while ((num / mul) > 0)
-	{
 		mul *= 10;
-	}
 
 
 	i = 1;
