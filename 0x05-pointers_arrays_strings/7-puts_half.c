@@ -3,11 +3,11 @@
 /**
  * puts_half - print the last half of a string
  *
- * @s : string to partially printed
+ * @str : string to partially printed
  *
  * Return: void
  */
-void puts_half(char *s)
+void puts_half(char *str)
 {
 	int i, l;
 
