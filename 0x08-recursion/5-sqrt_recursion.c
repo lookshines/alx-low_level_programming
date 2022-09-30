@@ -11,11 +11,11 @@
 int find_sqrt(int num, int root)
 {
 	if ((root * root) == num)
-	return (root);
-	if (root == num / 2)
-	return (-1);
-
-	return (find_sqrt(num, root + 1));
+		return (root);
+	else if (root * root > num)
+		return (-1);
+	else
+		return (find_sqrt(int + 1, root));
 }
 
 /**
