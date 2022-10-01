@@ -7,7 +7,7 @@
  * @dest: The buffer to copy string to
  * @src: The source to copy
  *
- * Return: copied outputi 
+ * Return: copied output
  */
 
 char *_strcpy(char *dest, char *src)
