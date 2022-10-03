@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - program that prints the minimum number 
- * 	of coins to make change for an amount of money
+ * main - program that prints the minimum number
+ *	of coins to make change for an amount of money
  *
  * @argc: number of arguments to program
  * @argv: argument to program
  *
  * Return: If the number of is not exactly one -1
- * 	Otherwise - 0
+ *	Otherwise - 0
  */
 int main(int argc, char *argv[])
 {
@@ -20,19 +20,18 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	cents = atoi(argv[1]);
-	
+
 	while (cents > 0)
 	{
 		coins++;
-		
+
 		if ((cents - 25) >= 0)
 		{
 			cents -= 25;
 			continue;
 		}
-
 		if ((cents - 10) >= 0)
 		{
 			cents -= 10;
@@ -50,8 +49,8 @@ int main(int argc, char *argv[])
 		}
 		cents--;
 	}
-	
+
 	printf("%d\n", coins);
-	
+
 	return (0);
 }
