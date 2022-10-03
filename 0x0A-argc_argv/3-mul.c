@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - program that multiplies two number 
+ * main - program that multiplies two number
  *
  * @argc: number of arguments to program
  * @argv: argument to program
@@ -26,5 +26,5 @@ int main(int argc, char *argv[])
 		printf("%d\n", mul);
 	}
 	return (0);
-	
+
 }
