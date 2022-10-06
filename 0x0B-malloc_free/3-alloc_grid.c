@@ -32,8 +32,8 @@ int **alloc_grid(int width, int height)
 			for (; hgt_index >= 0; hgt_index--)
 				free(twoD[hgt_index]);
 
-				free(twoD);
-				return (NULL);
+			free(twoD);
+			return (NULL);
 		}
 	}
 
