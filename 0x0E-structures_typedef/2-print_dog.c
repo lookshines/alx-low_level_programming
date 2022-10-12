@@ -6,7 +6,7 @@
  * print_dog - Function that prints a struct dog
  *
  * @d: pointer to struct dog
- *   
+ *
  */
 void print_dog(struct dog *d)
 {
