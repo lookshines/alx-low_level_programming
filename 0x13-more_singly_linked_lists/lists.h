@@ -10,7 +10,7 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
+ *
  */
 typedef struct listint_s
 {
@@ -21,4 +21,6 @@ typedef struct listint_s
 /* function that prints all the elements of a list_t list */
 size_t print_listint(const listint_t *h);
 
+/* function that returns the number of elements in a linked listint_t list*/
+size_t listint_len(const listint_t *h);
 #endif
