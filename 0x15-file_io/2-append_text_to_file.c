@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 
 	/*Get String lenght*/
-	if (!text_content)
+	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
 			len++;
