@@ -36,4 +36,7 @@ void free_listint2(listint_t **head);
 
 /*function that deletes the head node of a listint_t linked list*/
 int pop_listint(listint_t **head);
+
+/*function that returns the nth node of a listint_t linked list*/
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 #endif
